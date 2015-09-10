@@ -45,6 +45,7 @@ EOS
   s.subspec 'Reachability' do |ss|
     ss.ios.deployment_target = '7.0'
     ss.osx.deployment_target = '10.9'
+    ss.tvos.deployment_target = '9.0'
 
     ss.source_files = 'AFNetworking/AFNetworkReachabilityManager.{h,m}'
     ss.public_header_files = 'AFNetworking/AFNetworkReachabilityManager.h'
@@ -55,6 +56,7 @@ EOS
   s.subspec 'NSURLConnection' do |ss|
     ss.ios.deployment_target = '7.0'
     ss.osx.deployment_target = '10.9'
+    ss.tvos.deployment_target = '9.0'
 
     ss.dependency 'AFNetworking/Serialization'
     ss.dependency 'AFNetworking/Reachability'
