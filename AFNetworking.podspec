@@ -80,6 +80,14 @@ EOS
     ss.public_header_files = 'AFNetworking/AF{URL,HTTP}SessionManager.h'
   end
 
+  s.subspec 'tvOS-UIKit' do |ss|
+    ss.platform = :tvos
+    ss.dependency 'AFNetworking/NSURLConnection'
+
+    ss.public_header_files = 'UIKit+AFNetworking/{UIButton,UIImage,UIImageView}+AFNetworking.h'
+    ss.source_files = 'UIKit+AFNetworking/{UIButton,UIImage,UIImageView}+AFNetworking.{h,m}'
+  end
+
   s.subspec 'UIKit' do |ss|
     ss.platform = :ios
     ss.dependency 'AFNetworking/NSURLConnection'
